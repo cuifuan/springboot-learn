@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS sys_user;
+
+CREATE TABLE sys_user
+(
+    id       INT AUTO_INCREMENT PRIMARY KEY,
+    email    VARCHAR(250) DEFAULT NULL,
+    username VARCHAR(250) NOT NULL,
+    password VARCHAR(250) NOT NULL
+);
