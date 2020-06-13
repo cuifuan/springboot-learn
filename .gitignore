@@ -1,2 +1,4 @@
 .DS_Store
 springboot-jpa/.mvn
+.idea/
+spring-quick-start/.mvn/
