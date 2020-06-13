@@ -1,0 +1,15 @@
+version: '3'
+  services:
+    mongodb:
+      image: mongo:4.2.6 # 镜像:版本
+      container_name: mongo_db
+      environment:
+        - MONGO_INITDB_DATABASE=默认的数据库
+        - MONGO_INITDB_ROOT_USERNAME=你的root管理员名称
+        - MONGO_INITDB_ROOT_PASSWORD=你的root管理员名称密码
+      volumes:
+        - ./mongo/init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
+        - ./mongo/mongo-volume:/data/db
+      ports:
+        - "27017-27019:27017-27019"
+      restart: always
