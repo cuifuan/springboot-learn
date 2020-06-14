@@ -8,6 +8,7 @@
 ### [Spring Boot2.x: 集成 MongoDB](https://blog.csdn.net/Fine_Cui/article/details/106195498)
 ### [Spring Boot2.x: 集成 Redis 缓存](https://blog.csdn.net/Fine_Cui/article/details/103067129)
 ### [SpringBoot 2.x: 整合 Redis 入门](https://blog.csdn.net/Fine_Cui/article/details/103067109)
+### [Spring Boot 2.x: 定时给对象发送天气](https://juejin.im/post/5ee64e63518825432e25dc72)
 
 ## 所需工具安装
 ### [MongoDB快速入门指南与docker-compose快体验](https://www.yuque.com/ekko/database/dkluyg)
