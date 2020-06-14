@@ -5,20 +5,34 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.3.0.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <version>2.3.1.RELEASE</version>
+        <relativePath/>
     </parent>
-    <groupId>com.github.springtools</groupId>
-    <artifactId>spring-quick-start</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>spring-quick-start</name>
-    <description>Spring Boot Quick Start</description>
+    <groupId>com.github.ekko</groupId>
+    <artifactId>springboot-email</artifactId>
+    <version>1.0.0</version>
+    <name>springboot-email</name>
+    <description>Demo project for Spring Boot</description>
 
     <properties>
         <java.version>1.8</java.version>
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-mail</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>4.6.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.70</version>
+        </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -28,12 +42,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
-        <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-            <version>29.0-jre</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -48,6 +56,14 @@
         </dependency>
     </dependencies>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
     <repositories>
         <!--阿里云主仓库，代理了maven central和jcenter仓库-->
         <repository>
@@ -88,15 +104,4 @@
             </snapshots>
         </pluginRepository>
     </pluginRepositories>
-
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
-
 </project>

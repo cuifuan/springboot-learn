@@ -2,3 +2,7 @@
 springboot-jpa/.mvn
 .idea/
 spring-quick-start/.mvn/
+rebel.xml
+spring-quick-start/src/main/resources/rebel.xml
+*/rebel.xml
+springboot-email/src/main/resources/rebel.xml
