@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+</head>
+<body>
+
+<div id="app">
+    <h1>{{ message }}</h1>
+    是否重新抓取
+    <el-switch
+            v-model="isRefresh">
+    </el-switch>
+    <br>
+    <!--    <template>-->
+    <el-table
+            :data="tableData"
+            border
+            style="width: 100%">
+        <el-table-column
+                fixed
+                prop="ipAddress"
+                label="IP地址"
+                width="150">
+        </el-table-column>
+        <el-table-column
+                prop="port"
+                label="端口"
+                width="120">
+        </el-table-column>
+        <el-table-column
+                prop="serverAddress"
+                label="服务器地址"
+                width="120">
+        </el-table-column>
+        <el-table-column
+                prop="speed"
+                label="速度"
+                width="120">
+        </el-table-column>
+        <el-table-column
+                prop="type"
+                label="请求方式"
+                width="300">
+        </el-table-column>
+        <el-table-column
+                prop="anonymous"
+                label="匿名类型"
+                width="120">
+        </el-table-column>
+        <el-table-column
+                label="操作">
+                <el-button @click="handleClick(scope.row)" type="text" size="small">查看</el-button>
+                <el-button type="text" size="small">编辑</el-button>
+        </el-table-column>
+    </el-table>
+    <!--    </template>-->
+</div>
+<!-- 开发环境版本，包含了有帮助的命令行警告 -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<!-- 引入组件库 -->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script type="text/javascript">
+    var app = new Vue({
+        el: '#app',
+        methods: {
+            getTableData() {
+                let _this = this;
+                // 为给定 ID 的 user 创建请求
+                axios.get('ip/list')
+                    .then(function (response) {
+                        console.log(response);
+                        _this.tableData = response.data.data
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    });
+            }
+        },
+        created() {
+            this.getTableData()
+        },
+        data: {
+            message: 'ip池子代理',
+            tableData: [],
+            isRefresh: true
+        }
+    });
+</script>
+</body>
+</html>
