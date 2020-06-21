@@ -6,3 +6,5 @@ rebel.xml
 spring-quick-start/src/main/resources/rebel.xml
 */rebel.xml
 springboot-email/src/main/resources/rebel.xml
+docker-compose/mysql/
+docker-compose/redis/data/dump.rdb
