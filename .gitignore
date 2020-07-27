@@ -10,3 +10,4 @@ docker-compose/mysql/
 docker-compose/redis/data/dump.rdb
 JavaTestCode/target/
 springboot-autocsdn/.mvn/
+out/

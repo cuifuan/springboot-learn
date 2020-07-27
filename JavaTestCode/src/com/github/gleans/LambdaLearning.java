@@ -4,11 +4,23 @@ import java.util.Arrays;
 import java.util.DoubleSummaryStatistics;
 import java.util.List;
 import java.util.Objects;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 public class LambdaLearning {
     public static void main(String[] args) {
-        testTwo();
+//        testTwo();
+int[] ary = {1,2,3,1000};
+int maxNum = IntStream.of(ary).parallel().max().getAsInt();
+System.out.println(maxNum);
+
+new Thread(() -> System.out.println("test")).start();
+
+Runnable runnable = () -> System.out.println("test2");
+new Thread(runnable).start();
+
     }
+
     public static void testTwo(){
         List<Double> nums = Arrays.asList(1.01, 2.11, 3.23, 4.222, null, 5.6);
         DoubleSummaryStatistics number = nums.stream()
