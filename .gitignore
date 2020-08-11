@@ -11,3 +11,5 @@ docker-compose/redis/data/dump.rdb
 JavaTestCode/target/
 springboot-autocsdn/.mvn/
 out/
+springboot-redis/redis/data/dump.rdb
+springboot-redis/.mvn/
