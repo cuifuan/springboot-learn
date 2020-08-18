@@ -8,7 +8,7 @@ public class TestReduce {
         testOne();
     }
 
-    public static void testOne(){
+    public static void testOne() {
         List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6);
         // 这里的 10 相当于初始值
         int sum = numbers

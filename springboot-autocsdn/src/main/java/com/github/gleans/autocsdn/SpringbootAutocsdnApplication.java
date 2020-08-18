@@ -12,7 +12,7 @@ public class SpringbootAutocsdnApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(SpringbootAutocsdnApplication.class, args);
-		load();
+        load();
     }
 
     @GetMapping("ref")

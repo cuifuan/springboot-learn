@@ -10,7 +10,7 @@ import java.util.List;
 @Repository
 public interface DepartmentRepository extends MongoRepository<Department, String> {
     @Query(value = "{'Employee.name': ?0}", fields = "{'employees' : 0}")
-    Department findDepartmentByEmployeeName (String empName);
+    Department findDepartmentByEmployeeName(String empName);
 
-    List<Department> findDepartmentByName (String name);
+    List<Department> findDepartmentByName(String name);
 }

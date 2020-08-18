@@ -1,9 +1,9 @@
 spring:
   datasource:
-      driver-class-name: com.mysql.cj.jdbc.Driver
-      url: jdbc:mysql://127.0.0.1:3306/big-data?characterEncoding=utf-8
-      username: root
-      password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/big-data?characterEncoding=utf-8
+    username: root
+    password: root
   jpa:
     open-in-view: true
     database-platform: org.hibernate.dialect.H2Dialect

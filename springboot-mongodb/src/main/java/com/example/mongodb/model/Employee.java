@@ -12,35 +12,35 @@ public class Employee {
     private int age;
     private double salary;
 
-    public String getEmpId () {
+    public String getEmpId() {
         return empId;
     }
 
-    public void setEmpId (String empId) {
+    public void setEmpId(String empId) {
         this.empId = empId;
     }
 
-    public String getName () {
+    public String getName() {
         return name;
     }
 
-    public void setName (String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
-    public int getAge () {
+    public int getAge() {
         return age;
     }
 
-    public void setAge (int age) {
+    public void setAge(int age) {
         this.age = age;
     }
 
-    public double getSalary () {
+    public double getSalary() {
         return salary;
     }
 
-    public void setSalary (double salary) {
+    public void setSalary(double salary) {
         this.salary = salary;
     }
 

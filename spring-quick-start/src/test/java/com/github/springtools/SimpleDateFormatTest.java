@@ -16,14 +16,14 @@ public class SimpleDateFormatTest {
         System.out.println("--------单个调用结束--------");
         System.out.println("--------多线程调用开始--------");
 
-IntStream.rangeClosed(0, 5)
-        .forEach(i -> new Thread(() -> {
-            try {
-                System.out.println("ThreadLocal:" + THREADLOCAL_FORMAT.get().parse("2020-06-06"));
-                System.out.println("JAVA8_FORMATTER:" + JAVA8_FORMATTER.parse("2020-06-06"));
-            } catch (ParseException e) {
-                e.printStackTrace();
-            }
-        }).start());
+        IntStream.rangeClosed(0, 5)
+                .forEach(i -> new Thread(() -> {
+                    try {
+                        System.out.println("ThreadLocal:" + THREADLOCAL_FORMAT.get().parse("2020-06-06"));
+                        System.out.println("JAVA8_FORMATTER:" + JAVA8_FORMATTER.parse("2020-06-06"));
+                    } catch (ParseException e) {
+                        e.printStackTrace();
+                    }
+                }).start());
     }
 }

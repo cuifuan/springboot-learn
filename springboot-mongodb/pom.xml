@@ -10,7 +10,7 @@
     </parent>
 
     <groupId>com.example</groupId>
-    <artifactId>springboot-demo</artifactId>
+    <artifactId>springboot-mongodb</artifactId>
     <version>1.0.0</version>
 
 

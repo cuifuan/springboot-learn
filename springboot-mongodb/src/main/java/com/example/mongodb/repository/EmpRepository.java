@@ -11,7 +11,7 @@ public class EmpRepository {
     @Autowired
     private MongoTemplate mongoTemplate;
 
-    public void save (Employee employee) {
+    public void save(Employee employee) {
         mongoTemplate.save(employee);
     }
 }

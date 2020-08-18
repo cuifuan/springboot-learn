@@ -1,6 +1,7 @@
 package com.github.springtools.test;
 
 import com.google.common.collect.ImmutableList;
+
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;

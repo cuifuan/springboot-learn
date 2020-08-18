@@ -8,8 +8,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @SpringBootApplication
 public class SpringBootProxyPoolApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(SpringBootProxyPoolApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(SpringBootProxyPoolApplication.class, args);
+    }
 
 }
