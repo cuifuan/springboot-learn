@@ -31,18 +31,3 @@ build/
 
 ### VS Code ###
 .vscode/
-.DS_Store
-springboot-jpa/.mvn
-.idea/
-spring-quick-start/.mvn/
-rebel.xml
-spring-quick-start/src/main/resources/rebel.xml
-*/rebel.xml
-springboot-email/src/main/resources/rebel.xml
-docker-compose/mysql/
-docker-compose/redis/data/dump.rdb
-JavaTestCode/target/
-springboot-autocsdn/.mvn/
-out/
-springboot-redis/redis/data/dump.rdb
-springboot-redis/.mvn/
