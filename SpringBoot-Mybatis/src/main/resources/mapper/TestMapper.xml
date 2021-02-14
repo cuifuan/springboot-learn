@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.github.demo.mapper.TestMapper">
+
+    <select id="findByFirstName" resultType="MybatisTest" parameterType="java.lang.String">
+        SELECT
+            id,
+            first_name as firstName,
+            en_name as enName
+        FROM mybatis_test
+        WHERE first_name = #{value}
+    </select>
+
+</mapper>
