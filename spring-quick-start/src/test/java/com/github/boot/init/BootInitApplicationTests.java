@@ -1,13 +1,13 @@
-package com.github.springtools;
+package com.github.boot.init;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringQuickStartApplicationTests {
+class BootInitApplicationTests {
 
-    @Test
-    void contextLoads() {
-    }
+	@Test
+	void contextLoads() {
+	}
 
 }

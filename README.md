@@ -1,10 +1,8 @@
-# Spring Boot 2.x 学习记录笔记
+## Spring Boot 2022 学习记录笔记
 
-
-## Spring Boot 基础篇
-
+### Spring Boot 基础篇
+- [Spring Boot 2.x: 快速入门指南](https://blog.csdn.net/Fine_Cui/article/details/106730330)
 ### [Spring Boot 2.x: 支付宝沙箱支付](https://www.yuque.com/ekko/develop/nx4zap)
-### [Spring Boot 2.x: 快速入门指南](https://blog.csdn.net/Fine_Cui/article/details/106730330)
 ### [Spring Boot 2.x: 定时给对象发送天气](https://juejin.im/post/5ee64e63518825432e25dc72)
 ### [Spring Boot 2.x: 集成JPA快速开发](https://blog.csdn.net/Fine_Cui/article/details/106270118)
 ### [Spring Boot 2.x: 集成 MongoDB](https://blog.csdn.net/Fine_Cui/article/details/106195498)
