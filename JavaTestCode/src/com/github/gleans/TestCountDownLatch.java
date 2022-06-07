@@ -1,4 +1,4 @@
-package com.github.gleans;
+package store.zabbix.bran;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;

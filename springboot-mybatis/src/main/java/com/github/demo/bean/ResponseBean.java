@@ -1,4 +1,4 @@
-package com.github.demo.bean;
+package store.zabbix.cuifuan.bean;
 
 
 import lombok.Data;

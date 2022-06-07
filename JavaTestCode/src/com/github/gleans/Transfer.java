@@ -1,4 +1,4 @@
-package com.github.gleans;
+package store.zabbix.bran;
 
 import java.util.stream.Collectors;
 import java.util.stream.Stream;

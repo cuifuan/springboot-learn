@@ -1,4 +1,4 @@
-package com.github.luca168.config;
+package store.zabbix.luca168.config;
 
 import javax.sql.DataSource;
 

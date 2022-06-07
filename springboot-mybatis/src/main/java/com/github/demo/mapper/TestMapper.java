@@ -1,6 +1,6 @@
-package com.github.demo.mapper;
+package store.zabbix.cuifuan.mapper;
 
-import com.github.demo.model.MybatisTest;
+import store.zabbix.cuifuan.model.MybatisTest;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Options;

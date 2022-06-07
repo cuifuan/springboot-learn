@@ -8,7 +8,7 @@
 		<version>2.4.2</version>
 		<relativePath/> <!-- 从存储库查找父级 -->
 	</parent>
-	<groupId>com.github</groupId>
+	<groupId>store.zabbix</groupId>
 	<artifactId>SpringBoot-Mybatis</artifactId>
 	<version>1.0.0</version>
 	<name>SpringBoot-Mybatis</name>

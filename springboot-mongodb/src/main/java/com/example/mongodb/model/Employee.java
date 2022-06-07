@@ -1,4 +1,4 @@
-package com.example.mongodb.model;
+package store.zabbix.mongodb.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;

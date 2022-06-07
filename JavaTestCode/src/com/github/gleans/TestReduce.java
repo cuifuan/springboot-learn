@@ -1,4 +1,4 @@
-package com.github.gleans;
+package store.zabbix.bran;
 
 import java.util.Arrays;
 import java.util.List;

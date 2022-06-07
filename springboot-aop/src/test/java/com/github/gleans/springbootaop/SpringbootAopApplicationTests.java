@@ -1,4 +1,4 @@
-package com.github.gleans.springbootaop;
+package store.zabbix.bran.springbootaop;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

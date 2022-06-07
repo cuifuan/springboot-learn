@@ -1,6 +1,4 @@
-package com.github.gleans.ekko.controller;
-
-import org.springframework.stereotype.Controller;
+package store.zabbix.bran.ekko.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

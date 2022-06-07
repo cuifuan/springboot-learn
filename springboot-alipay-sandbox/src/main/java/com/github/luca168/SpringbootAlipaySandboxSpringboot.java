@@ -1,4 +1,4 @@
-package com.github.luca168;
+package store.zabbix.luca168;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;

@@ -1,4 +1,4 @@
-package com.github.gleans;
+package store.zabbix.bran;
 
 interface TestLamdaInterface {
     int testSub(int i, int k);

@@ -1,4 +1,4 @@
-package com.github.gleans.ekko.common;
+package store.zabbix.bran.ekko.common;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

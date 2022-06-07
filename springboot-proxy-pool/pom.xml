@@ -8,7 +8,7 @@
         <version>2.3.1.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.github.gleans</groupId>
+    <groupId>store.zabbix.gleans</groupId>
     <artifactId>SpringBoot-ProxyPool</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>SpringBoot-ProxyPool</name>
@@ -51,7 +51,7 @@
             </exclusions>
         </dependency>
         <dependency>
-            <groupId>com.github.xiaoymin</groupId>
+            <groupId>store.zabbix.xiaoymin</groupId>
             <artifactId>knife4j-spring-boot-starter</artifactId>
             <version>${knife4j.version}</version>
         </dependency>

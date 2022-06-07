@@ -8,7 +8,7 @@
 		<version>2.7.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.github</groupId>
+	<groupId>store.zabbix</groupId>
 	<artifactId>boot-init</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>boot-init</name>

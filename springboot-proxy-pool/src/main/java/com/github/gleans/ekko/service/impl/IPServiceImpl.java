@@ -1,8 +1,8 @@
-package com.github.gleans.ekko.service.impl;
+package store.zabbix.bran.ekko.service.impl;
 
-import com.github.gleans.ekko.model.IPData;
-import com.github.gleans.ekko.service.IPService;
-import com.github.gleans.ekko.utils.HttpCustom;
+import store.zabbix.bran.ekko.model.IPData;
+import store.zabbix.bran.ekko.service.IPService;
+import store.zabbix.bran.ekko.utils.HttpCustom;
 import lombok.extern.slf4j.Slf4j;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;

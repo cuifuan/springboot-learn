@@ -9,7 +9,7 @@
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.github.luca168</groupId>
+    <groupId>store.zabbix.luca168</groupId>
     <artifactId>springboot-alipay-sandbox</artifactId>
     <version>1.0.0</version>
 

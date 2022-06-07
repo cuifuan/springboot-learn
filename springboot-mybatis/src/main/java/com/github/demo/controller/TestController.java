@@ -1,8 +1,8 @@
-package com.github.demo.controller;
+package store.zabbix.cuifuan.controller;
 
-import com.github.demo.bean.ResponseBean;
-import com.github.demo.model.MybatisTest;
-import com.github.demo.service.TestService;
+import store.zabbix.cuifuan.bean.ResponseBean;
+import store.zabbix.cuifuan.model.MybatisTest;
+import store.zabbix.cuifuan.service.TestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

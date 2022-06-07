@@ -1,4 +1,4 @@
-package com.github.ekko.springtools;
+package store.zabbix.ekko.springtools;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

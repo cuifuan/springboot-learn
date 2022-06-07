@@ -1,4 +1,4 @@
-package com.github.gleans.ekko.model;
+package store.zabbix.bran.ekko.model;
 
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;

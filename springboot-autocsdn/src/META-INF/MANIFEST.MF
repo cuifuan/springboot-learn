@@ -1,3 +1,3 @@
 Manifest-Version: 1.0
-Main-Class: com.github.gleans.autocsdn.SpringbootAutocsdnApplication
+Main-Class: store.zabbix.gleans.autocsdn.SpringbootAutocsdnApplication
 

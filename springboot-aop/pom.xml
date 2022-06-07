@@ -8,7 +8,7 @@
         <version>2.3.3.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.github.gleans</groupId>
+    <groupId>store.zabbix.gleans</groupId>
     <artifactId>springboot-aop</artifactId>
     <version>1.0.0</version>
     <name>springboot-aop</name>

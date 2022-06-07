@@ -1,8 +1,8 @@
-package com.github.gleans.ekko.controller;
+package store.zabbix.bran.ekko.controller;
 
-import com.github.gleans.ekko.common.ResultBean;
-import com.github.gleans.ekko.model.IPData;
-import com.github.gleans.ekko.service.IPService;
+import store.zabbix.bran.ekko.common.ResultBean;
+import store.zabbix.bran.ekko.model.IPData;
+import store.zabbix.bran.ekko.service.IPService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

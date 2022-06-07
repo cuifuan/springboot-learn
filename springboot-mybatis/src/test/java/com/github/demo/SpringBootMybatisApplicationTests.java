@@ -1,4 +1,4 @@
-package com.github.demo;
+package store.zabbix.cuifuan;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

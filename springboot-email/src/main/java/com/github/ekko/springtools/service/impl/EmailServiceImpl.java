@@ -1,10 +1,10 @@
-package com.github.ekko.springtools.service.impl;
+package store.zabbix.ekko.springtools.service.impl;
 
 import cn.hutool.http.HttpRequest;
 import cn.hutool.http.HttpUtil;
 import com.alibaba.fastjson.JSON;
-import com.github.ekko.springtools.model.Weather;
-import com.github.ekko.springtools.service.EmailService;
+import store.zabbix.ekko.springtools.model.Weather;
+import store.zabbix.ekko.springtools.service.EmailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;

@@ -1,4 +1,4 @@
-package com.github.demo.model;
+package store.zabbix.cuifuan.model;
 
 import lombok.Data;
 

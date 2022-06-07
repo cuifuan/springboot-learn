@@ -1,4 +1,4 @@
-package com.github.ekko.springtools.model;
+package store.zabbix.ekko.springtools.model;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

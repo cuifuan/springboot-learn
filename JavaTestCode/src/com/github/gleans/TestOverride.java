@@ -1,4 +1,4 @@
-//package com.github.gleans;
+//package store.zabbix.gleans;
 //
 //public class TestOverride {
 //    public static void hello(){

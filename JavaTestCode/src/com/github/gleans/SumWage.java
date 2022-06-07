@@ -1,4 +1,4 @@
-package com.github.gleans;
+package store.zabbix.bran;
 
 import jdk.nashorn.internal.objects.NativeJSON;
 import jdk.nashorn.internal.parser.JSONParser;

@@ -1,6 +1,6 @@
-package com.example.springbootupfile.service.impl;
+package store.zabbix.springbootupfile.service.impl;
 
-import com.example.springbootupfile.service.UploadService;
+import store.zabbix.springbootupfile.service.UploadService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;

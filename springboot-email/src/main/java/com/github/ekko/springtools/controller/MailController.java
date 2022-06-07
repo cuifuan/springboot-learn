@@ -1,7 +1,7 @@
-package com.github.ekko.springtools.controller;
+package store.zabbix.ekko.springtools.controller;
 
-import com.github.ekko.springtools.model.Weather;
-import com.github.ekko.springtools.service.EmailService;
+import store.zabbix.ekko.springtools.model.Weather;
+import store.zabbix.ekko.springtools.service.EmailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;

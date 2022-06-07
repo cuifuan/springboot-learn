@@ -1,4 +1,4 @@
-package com.github.gleans.ekko;
+package store.zabbix.bran.ekko;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

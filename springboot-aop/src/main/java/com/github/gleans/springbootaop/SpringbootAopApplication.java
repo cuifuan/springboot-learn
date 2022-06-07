@@ -1,4 +1,4 @@
-package com.github.gleans.springbootaop;
+package store.zabbix.bran.springbootaop;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

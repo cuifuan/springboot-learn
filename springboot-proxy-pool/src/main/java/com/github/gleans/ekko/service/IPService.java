@@ -1,7 +1,7 @@
-package com.github.gleans.ekko.service;
+package store.zabbix.bran.ekko.service;
 
-import com.github.gleans.ekko.common.ResultBean;
-import com.github.gleans.ekko.model.IPData;
+import store.zabbix.bran.ekko.common.ResultBean;
+import store.zabbix.bran.ekko.model.IPData;
 
 import java.util.List;
 

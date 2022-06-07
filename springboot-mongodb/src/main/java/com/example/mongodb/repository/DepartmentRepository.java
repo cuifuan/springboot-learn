@@ -1,6 +1,6 @@
-package com.example.mongodb.repository;
+package store.zabbix.mongodb.repository;
 
-import com.example.mongodb.model.Department;
+import store.zabbix.mongodb.model.Department;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 import org.springframework.stereotype.Repository;

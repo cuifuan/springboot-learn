@@ -8,7 +8,7 @@
         <version>2.3.1.RELEASE</version>
         <relativePath/>
     </parent>
-    <groupId>com.github.ekko</groupId>
+    <groupId>store.zabbix.ekko</groupId>
     <artifactId>springboot-email</artifactId>
     <version>1.0.0</version>
     <name>springboot-email</name>

@@ -1,4 +1,4 @@
-package com.example.springbootupfile.service;
+package store.zabbix.springbootupfile.service;
 
 import org.springframework.web.multipart.MultipartFile;
 

@@ -1,6 +1,6 @@
-package com.github.demo.service;
+package store.zabbix.cuifuan.service;
 
-import com.github.demo.model.MybatisTest;
+import store.zabbix.cuifuan.model.MybatisTest;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.github.boot.init;
+package store.zabbix.boot.init;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

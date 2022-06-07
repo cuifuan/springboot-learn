@@ -1,4 +1,4 @@
-package com.github.gleans.autocsdn.utils;
+package store.zabbix.bran.autocsdn.utils;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;

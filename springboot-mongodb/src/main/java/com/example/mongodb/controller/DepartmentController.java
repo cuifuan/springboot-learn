@@ -1,10 +1,10 @@
-package com.example.mongodb.controller;
+package store.zabbix.mongodb.controller;
 
-import com.example.mongodb.model.Department;
-import com.example.mongodb.model.Employee;
-import com.example.mongodb.repository.DepartmentRepository;
-import com.example.mongodb.repository.DeptRepository;
-import com.example.mongodb.repository.EmpRepository;
+import store.zabbix.mongodb.model.Department;
+import store.zabbix.mongodb.model.Employee;
+import store.zabbix.mongodb.repository.DepartmentRepository;
+import store.zabbix.mongodb.repository.DeptRepository;
+import store.zabbix.mongodb.repository.EmpRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

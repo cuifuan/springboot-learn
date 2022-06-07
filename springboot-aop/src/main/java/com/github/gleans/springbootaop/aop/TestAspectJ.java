@@ -1,4 +1,4 @@
-package com.github.gleans.springbootaop.aop;
+package store.zabbix.bran.springbootaop.aop;
 
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
@@ -15,7 +15,7 @@ import java.util.Map;
 public class TestAspectJ {
 
     // 前置通知
-    @Before("execution(* com.github.gleans.springbootaop.controller..*(..))")
+    @Before("execution(* store.zabbix.gleans.springbootaop.controller..*(..))")
     public void before(JoinPoint joinPoint) {
         // 通知
         log.info("前置通知测试");
@@ -23,14 +23,14 @@ public class TestAspectJ {
     }
 
     // 后置通知
-    @After("execution(* com.github.gleans.springbootaop.controller..*(..))")
+    @After("execution(* store.zabbix.gleans.springbootaop.controller..*(..))")
     public void after(JoinPoint joinPoint) {
         // 通知
         log.info("后置通知测试,当前节点：{}", joinPoint);
     }
 
     // 环绕通知
-    @Around("execution(* com.github.gleans.springbootaop.controller..*(..))")
+    @Around("execution(* store.zabbix.gleans.springbootaop.controller..*(..))")
     public Object handlerControllerMethod(ProceedingJoinPoint joinPoint) {
         long startTime = System.currentTimeMillis();
         Object res = null;
@@ -47,7 +47,7 @@ public class TestAspectJ {
 
 
     //也可以定义切入点
-    @Pointcut(value = "execution(* com.github.gleans.springbootaop.controller..*(..))")
+    @Pointcut(value = "execution(* store.zabbix.gleans.springbootaop.controller..*(..))")
     public void testAfterReturing(){};
 
     // 正常返回通知

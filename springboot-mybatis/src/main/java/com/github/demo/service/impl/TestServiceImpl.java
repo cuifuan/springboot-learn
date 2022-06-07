@@ -1,8 +1,8 @@
-package com.github.demo.service.impl;
+package store.zabbix.cuifuan.service.impl;
 
-import com.github.demo.mapper.TestMapper;
-import com.github.demo.model.MybatisTest;
-import com.github.demo.service.TestService;
+import store.zabbix.cuifuan.mapper.TestMapper;
+import store.zabbix.cuifuan.model.MybatisTest;
+import store.zabbix.cuifuan.service.TestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

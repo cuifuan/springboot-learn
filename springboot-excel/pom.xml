@@ -3,16 +3,15 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.4.4</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <groupId>store.zabbix</groupId>
+        <artifactId>springboot-learn</artifactId>
+        <version>1.0.0</version>
     </parent>
-    <groupId>com.github</groupId>
+
     <artifactId>springboot-excel</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
     <name>springboot-excel</name>
-    <description>Working with Microsoft Excel in Java</description>
+    <description>Excel 导入导出的示例</description>
+
     <properties>
         <java.version>1.8</java.version>
     </properties>
@@ -29,16 +28,6 @@
             <version>5.0.0</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
     </dependencies>
 
     <build>
@@ -49,45 +38,4 @@
             </plugin>
         </plugins>
     </build>
-
-    <repositories>
-        <!--阿里云主仓库，代理了maven central和jcenter仓库-->
-        <repository>
-            <id>aliyun</id>
-            <name>aliyun</name>
-            <url>https://maven.aliyun.com/repository/public</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-        <!--阿里云代理Spring 官方仓库-->
-        <repository>
-            <id>spring-milestones</id>
-            <name>Spring Milestones</name>
-            <url>https://maven.aliyun.com/repository/spring</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
-    <pluginRepositories>
-        <!--阿里云代理Spring 插件仓库-->
-        <pluginRepository>
-            <id>spring-plugin</id>
-            <name>spring-plugin</name>
-            <url>https://maven.aliyun.com/repository/spring-plugin</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </pluginRepository>
-    </pluginRepositories>
 </project>

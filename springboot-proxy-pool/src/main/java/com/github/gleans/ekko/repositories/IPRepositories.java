@@ -1,6 +1,6 @@
-package com.github.gleans.ekko.repositories;
+package store.zabbix.bran.ekko.repositories;
 
-import com.github.gleans.ekko.model.IPData;
+import store.zabbix.bran.ekko.model.IPData;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

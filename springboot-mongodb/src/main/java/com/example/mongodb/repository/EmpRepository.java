@@ -1,6 +1,6 @@
-package com.example.mongodb.repository;
+package store.zabbix.mongodb.repository;
 
-import com.example.mongodb.model.Employee;
+import store.zabbix.mongodb.model.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.stereotype.Repository;

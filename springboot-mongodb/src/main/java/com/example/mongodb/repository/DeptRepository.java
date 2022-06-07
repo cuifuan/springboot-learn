@@ -1,6 +1,6 @@
-package com.example.mongodb.repository;
+package store.zabbix.mongodb.repository;
 
-import com.example.mongodb.model.Department;
+import store.zabbix.mongodb.model.Department;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;

@@ -1,4 +1,4 @@
-package com.github.boot.init.controller;
+package store.zabbix.boot.init.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

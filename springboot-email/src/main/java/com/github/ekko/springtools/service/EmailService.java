@@ -1,6 +1,6 @@
-package com.github.ekko.springtools.service;
+package store.zabbix.ekko.springtools.service;
 
-import com.github.ekko.springtools.model.Weather;
+import store.zabbix.ekko.springtools.model.Weather;
 
 import java.util.List;
 

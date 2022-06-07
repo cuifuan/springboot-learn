@@ -1,4 +1,4 @@
-package com.github.gleans.ekko.utils;
+package store.zabbix.bran.ekko.utils;
 
 import org.apache.http.HttpHost;
 import org.apache.http.client.config.RequestConfig;
