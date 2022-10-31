@@ -1,0 +1,11 @@
+# 项目配置 端口与路径
+server:
+  port: 10010
+  servlet:
+    context-path: /admin
+# 数据源配置
+spring:
+  profiles:
+    active: dev
+  main:
+    allow-circular-references: true
