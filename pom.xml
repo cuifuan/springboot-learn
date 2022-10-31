@@ -21,6 +21,7 @@
         <module>springboot-redis</module>
         <module>springboot-jpa</module>
         <module>springboot-excel</module>
+        <module>springboot-init-db</module>
     </modules>
 
     <properties>
