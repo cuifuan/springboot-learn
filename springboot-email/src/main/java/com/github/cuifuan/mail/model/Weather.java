@@ -1,4 +1,4 @@
-package store.zabbix.ekko.springtools.model;
+package com.github.cuifuan.mail.model;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

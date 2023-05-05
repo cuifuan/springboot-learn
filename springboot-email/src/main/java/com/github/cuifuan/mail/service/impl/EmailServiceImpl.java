@@ -1,14 +1,14 @@
-package store.zabbix.ekko.springtools.service.impl;
+package com.github.cuifuan.mail.service.impl;
 
 import cn.hutool.http.HttpRequest;
 import cn.hutool.http.HttpUtil;
 import com.alibaba.fastjson.JSON;
-import store.zabbix.ekko.springtools.model.Weather;
-import store.zabbix.ekko.springtools.service.EmailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
+import com.github.cuifuan.mail.model.Weather;
+import com.github.cuifuan.mail.service.EmailService;
 
 import javax.mail.internet.MimeMessage;
 import java.util.ArrayList;

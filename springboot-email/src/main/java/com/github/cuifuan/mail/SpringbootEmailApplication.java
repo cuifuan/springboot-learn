@@ -1,4 +1,4 @@
-package store.zabbix.ekko.springtools;
+package com.github.cuifuan.mail;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

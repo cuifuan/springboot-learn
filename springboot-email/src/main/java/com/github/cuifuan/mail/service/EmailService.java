@@ -1,6 +1,6 @@
-package store.zabbix.ekko.springtools.service;
+package com.github.cuifuan.mail.service;
 
-import store.zabbix.ekko.springtools.model.Weather;
+import com.github.cuifuan.mail.model.Weather;
 
 import java.util.List;
 

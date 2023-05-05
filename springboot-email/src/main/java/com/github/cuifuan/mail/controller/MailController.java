@@ -1,7 +1,7 @@
-package store.zabbix.ekko.springtools.controller;
+package com.github.cuifuan.mail.controller;
 
-import store.zabbix.ekko.springtools.model.Weather;
-import store.zabbix.ekko.springtools.service.EmailService;
+import com.github.cuifuan.mail.model.Weather;
+import com.github.cuifuan.mail.service.EmailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;

@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>store.zabbix</groupId>
+        <groupId>com.github.cuifuan</groupId>
         <artifactId>springboot-learn</artifactId>
         <version>1.0.0</version>
     </parent>

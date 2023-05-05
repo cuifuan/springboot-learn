@@ -10,7 +10,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>store.zabbix</groupId>
+    <groupId>com.github.cuifuan</groupId>
     <artifactId>springboot-learn</artifactId>
     <version>1.0.0</version>
     <name>springboot-learn</name>
@@ -23,6 +23,7 @@
         <module>springboot-aop</module>
         <module>springboot-excel</module>
         <module>springboot-init-db</module>
+        <module>springboot-email</module>
     </modules>
 
     <properties>
