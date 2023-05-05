@@ -12,9 +12,7 @@
 
 | 目录 | 详情 |
 |-------------------|--|
-| springboot-excel | [Excel 导入导出](./springboot-excel/README.md) |
-| MySQL | 5.7.2 |
-| MyBatis PLUS | 3.5.2 |
+| springboot-excel | [Excel 导入导出](./springboot-excel) |
 
 ### 博客笔记
 
