@@ -9,11 +9,10 @@
         <version>1.0.0</version>
     </parent>
 
-    <groupId>com.bran</groupId>
-    <artifactId>springboot-admin</artifactId>
-    <version>1.0.0</version>
-    <name>springboot-admin</name>
-    <description>后端快速开发模板</description>
+    <artifactId>springboot-auth</artifactId>
+    <name>springboot-auth</name>
+    <description>权限模块</description>
+
     <properties>
         <java.version>1.8</java.version>
         <mybatis-plus.version>3.5.2</mybatis-plus.version>

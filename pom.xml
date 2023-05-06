@@ -18,6 +18,7 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>springboot-auth</module>
         <module>springboot-redis</module>
         <module>springboot-jpa</module>
         <module>springboot-aop</module>
