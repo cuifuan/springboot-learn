@@ -1,7 +1,8 @@
-package store.zabbix.luca168.config;
+package com.github.cuifuan.alipay.config;
 
 import java.io.FileWriter;
 import java.io.IOException;
+
 
 public class AlipayConfig {
     //↓↓↓↓↓↓↓↓↓↓请在这里配置您的基本信息↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓

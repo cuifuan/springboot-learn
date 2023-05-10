@@ -25,6 +25,8 @@
         <module>springboot-excel</module>
         <module>springboot-init-db</module>
         <module>springboot-email</module>
+        <!--        支付宝沙箱支付-->
+        <module>springboot-alipay</module>
     </modules>
 
     <properties>

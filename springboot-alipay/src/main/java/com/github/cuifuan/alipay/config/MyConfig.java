@@ -1,4 +1,4 @@
-package store.zabbix.luca168.config;
+package com.github.cuifuan.alipay.config;
 
 import javax.sql.DataSource;
 
