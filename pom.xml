@@ -27,6 +27,8 @@
         <module>springboot-email</module>
         <!--        支付宝沙箱支付-->
         <module>springboot-alipay</module>
+        <!--       Learning kafka -->
+        <module>springboot-kafka</module>
     </modules>
 
     <properties>

@@ -1,4 +1,4 @@
-package store.zabbix.bran.model;
+package com.github.cuifuan.redis.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,6 +1,6 @@
-package store.zabbix.bran.dao;
+package com.github.cuifuan.redis.dao;
 
-import store.zabbix.bran.model.User;
+import com.github.cuifuan.redis.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,22 +1,19 @@
-package store.zabbix.bran.controller;
+package com.github.cuifuan.redis.controller;
 
-import store.zabbix.bran.dao.UserRepository;
-import store.zabbix.bran.model.User;
+import com.github.cuifuan.redis.dao.UserRepository;
+import com.github.cuifuan.redis.model.User;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-
 @Slf4j
 @RestController
 public class UserController {
 
-    private  UserRepository userRepository;
+    private UserRepository userRepository;
 
     @Autowired
     public void setUserRepository(UserRepository userRepository) {

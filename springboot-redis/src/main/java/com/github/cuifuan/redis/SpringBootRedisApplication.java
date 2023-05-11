@@ -1,7 +1,7 @@
-package store.zabbix.bran;
+package com.github.cuifuan.redis;
 
-import store.zabbix.bran.dao.UserRepository;
-import store.zabbix.bran.model.User;
+import com.github.cuifuan.redis.dao.UserRepository;
+import com.github.cuifuan.redis.model.User;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
