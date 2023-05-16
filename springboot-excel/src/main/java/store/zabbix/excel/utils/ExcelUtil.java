@@ -194,6 +194,10 @@ public class ExcelUtil {
         XSSFCellStyle cellStyle = ExcelUtil.getCellStyle(workbook);
         cellStyle.setFillForegroundColor(IndexedColors.INDIGO.getIndex());
         cellStyle.setFillPattern(FillPatternType.SOLID_FOREGROUND);
+        // 设置水平居中
+        cellStyle.setAlignment(HorizontalAlignment.CENTER);
+        // 设置垂直居中
+        cellStyle.setVerticalAlignment(VerticalAlignment.CENTER);
         return cellStyle;
     }
 
