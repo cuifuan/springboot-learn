@@ -1,23 +1,23 @@
-package store.zabbix.excel.utils;
+package com.github.cuifuan.excel.utils;
 
+import lombok.extern.slf4j.Slf4j;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletResponse;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.URLEncoder;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
-import java.util.Objects;
 
 import static org.apache.logging.log4j.util.Strings.EMPTY;
 
+@Slf4j
 public class ExcelUtil {
     // excel 2003 版本 excel
     public static final String MICROSOFT_EXCEL_2003 = "xls";
@@ -25,42 +25,48 @@ public class ExcelUtil {
     public static final String MICROSOFT_EXCEL_2007 = "xlsx";
 
     /**
-     * 读取excel文件
-     *
-     * @param path 文件地址
+     * 读取 excel 文件
      */
-    public static List<List<String>> readExcel(String path) throws Exception {
-        File excelFile = new File(path);
-        if (!excelFile.exists()) {
-            throw new FileNotFoundException("文件不存在");
+    public static List<List<String>> readExcel(MultipartFile file) throws Exception {
+        if (file.isEmpty()) {
+            throw new RuntimeException("上传失败,上传文件为空!");
         }
-        FileInputStream fileInput = new FileInputStream(excelFile);
-        /*
-           根据文件后缀判断用xls或是xlsx处理
-         */
-        String[] postfixArray = path.split("\\.");
+        String originalFileName = file.getOriginalFilename();
+
+        log.info("文件名:originalFileName:{}", originalFileName);
+
+        if (originalFileName == null) {
+            throw new RuntimeException("文件名不能为空!");
+        }
+        String[] postfixArray = originalFileName.split("\\.");
         int lastIndex = postfixArray.length - 1;
         String postfix = postfixArray[lastIndex];
-        boolean excel2003 = Objects.equals(postfix, ExcelUtil.MICROSOFT_EXCEL_2003);
-        if (!excel2003
-                && !Objects.equals(postfix, ExcelUtil.MICROSOFT_EXCEL_2007)) {
-            throw new Exception("文件不符合要求");
+
+        InputStream fileInput = file.getInputStream();
+        Workbook wb;
+        switch (postfix) {
+            case ExcelUtil.MICROSOFT_EXCEL_2003:
+                wb = new HSSFWorkbook(fileInput);
+                break;
+            case ExcelUtil.MICROSOFT_EXCEL_2007:
+                wb = new XSSFWorkbook(fileInput);
+                break;
+            default:
+                throw new RuntimeException("文件不符合要求");
         }
 
-        try (Workbook wb = excel2003 ? new HSSFWorkbook(fileInput) : new XSSFWorkbook(fileInput)) {
-            List<List<String>> dataList = new ArrayList<>();
-            /*
-             * wb.getSheetAt(0) 简单的取第一个sheet的表格读取
-             */
-            for (Row row : wb.getSheetAt(0)) {
-                List<String> rowList = new ArrayList<>();
-                for (Cell cell : row) {
-                    rowList.add(getCellValue(cell));
-                }
-                dataList.add(rowList);
+        List<List<String>> dataList = new ArrayList<>();
+        /*
+         * wb.getSheetAt(0) 简单的取第一个sheet的表格读取
+         */
+        for (Row row : wb.getSheetAt(0)) {
+            List<String> rowList = new ArrayList<>();
+            for (Cell cell : row) {
+                rowList.add(getCellValue(cell));
             }
-            return dataList;
+            dataList.add(rowList);
         }
+        return dataList;
     }
 
     /**

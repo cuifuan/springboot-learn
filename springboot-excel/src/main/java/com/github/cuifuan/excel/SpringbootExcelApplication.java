@@ -1,4 +1,4 @@
-package store.zabbix.excel;
+package com.github.cuifuan.excel;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
