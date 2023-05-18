@@ -12,6 +12,7 @@ import java.io.InputStream;
 import java.net.URLEncoder;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.List;
 
@@ -43,29 +44,51 @@ public class ExcelUtil {
         String postfix = postfixArray[lastIndex];
 
         InputStream fileInput = file.getInputStream();
-        Workbook wb;
+        Workbook workbook;
         switch (postfix) {
             case ExcelUtil.MICROSOFT_EXCEL_2003:
-                wb = new HSSFWorkbook(fileInput);
+                workbook = new HSSFWorkbook(fileInput);
                 break;
             case ExcelUtil.MICROSOFT_EXCEL_2007:
-                wb = new XSSFWorkbook(fileInput);
+                workbook = new XSSFWorkbook(fileInput);
                 break;
             default:
                 throw new RuntimeException("文件不符合要求");
         }
 
         List<List<String>> dataList = new ArrayList<>();
-        /*
-         * wb.getSheetAt(0) 简单的取第一个sheet的表格读取
-         */
-        for (Row row : wb.getSheetAt(0)) {
-            List<String> rowList = new ArrayList<>();
-            for (Cell cell : row) {
-                rowList.add(getCellValue(cell));
+
+        // 获取第一张Sheet页
+        Sheet sheet = workbook.getSheetAt(0);
+        // 获取行的一个迭代器方法
+        Iterator<Row> rowIterator = sheet.rowIterator();
+        while (rowIterator.hasNext()) {
+            List<String> rowData = new ArrayList<>();
+            Row row = rowIterator.next();
+            //获取每行中的每一列
+            Iterator<Cell> cellIterator = row.cellIterator();
+            //计数.控制跳出循环.循环读取列
+            int i = -1;
+            //获取每行的列数
+            short lastCellNum = row.getLastCellNum();
+            while (cellIterator.hasNext()) {
+                i++;
+                //能正常读取空单元格
+                Cell cell = row.getCell(i, Row.MissingCellPolicy.CREATE_NULL_AS_BLANK);
+                if (i == lastCellNum) {
+                    break;
+                }
+                String value;
+                if (cell == null || cell.getCellType().equals(CellType.BLANK)) {
+                    value = "";
+                } else {
+                    value = getCellValue(cell);
+                }
+                rowData.add(value);
             }
-            dataList.add(rowList);
+            dataList.add(rowData);
         }
+
         return dataList;
     }
 
@@ -221,7 +244,7 @@ public class ExcelUtil {
                     DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("yyyy年MM月dd日 HH时mm分ss秒");
                     return timeFormatter.format(cell.getLocalDateTimeCellValue());
                 } else {
-                    return cell.getNumericCellValue() + "";
+                    return String.valueOf(cell.getNumericCellValue());
                 }
             case FORMULA:
                 return cell.getCellFormula() + EMPTY;
