@@ -93,12 +93,8 @@ public class ExcelUtil {
     }
 
     /**
-     * @param response
-     * @param titleMap  key-value格式的 excel
-     * @param dataList
-     * @param sheetName
-     * @param fileName
-     * @throws IOException
+     * @param titleMap key-value格式的 excel
+     * @param dataList 数据 list
      */
     public static void exportExcel(HttpServletResponse response,
                                    LinkedHashMap<String, String> titleMap,
@@ -134,7 +130,6 @@ public class ExcelUtil {
      *
      * @param titleList 标题集合
      * @param dataList  内容集合
-     * @throws IOException
      */
     public static void exportExcel(HttpServletResponse response,
                                    List<String> titleList,
@@ -207,7 +202,7 @@ public class ExcelUtil {
         XSSFFont font = workbook.createFont();
         font.setFontName("黑体");
         font.setFontHeightInPoints((short) 16);
-        font.setColor(IndexedColors.WHITE.getIndex());
+        font.setColor(IndexedColors.BLACK.getIndex());
         cellStyle.setFont(font);
         cellStyle.setBorderBottom(BorderStyle.THIN); //下边框
         cellStyle.setBorderLeft(BorderStyle.THIN);//左边框
@@ -221,6 +216,11 @@ public class ExcelUtil {
      */
     public static XSSFCellStyle getTitleCellStyle(XSSFWorkbook workbook) {
         XSSFCellStyle cellStyle = ExcelUtil.getCellStyle(workbook);
+        XSSFFont font = workbook.createFont();
+        font.setFontName("黑体");
+        font.setFontHeightInPoints((short) 16);
+        font.setColor(IndexedColors.WHITE.getIndex());
+        cellStyle.setFont(font);
         cellStyle.setFillForegroundColor(IndexedColors.INDIGO.getIndex());
         cellStyle.setFillPattern(FillPatternType.SOLID_FOREGROUND);
         // 设置水平居中
