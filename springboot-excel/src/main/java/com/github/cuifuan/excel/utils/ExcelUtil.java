@@ -9,7 +9,9 @@ import org.springframework.web.multipart.MultipartFile;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.InputStream;
+import java.math.BigDecimal;
 import java.net.URLEncoder;
+import java.text.DecimalFormat;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -26,7 +28,7 @@ public class ExcelUtil {
     public static final String MICROSOFT_EXCEL_2007 = "xlsx";
 
     /**
-     * 读取 excel 文件
+     * 读取excel文件
      */
     public static List<List<String>> readExcel(MultipartFile file) throws Exception {
         if (file.isEmpty()) {
@@ -70,23 +72,33 @@ public class ExcelUtil {
             //计数.控制跳出循环.循环读取列
             int i = -1;
             //获取每行的列数
-            short lastCellNum = row.getLastCellNum();
-            while (cellIterator.hasNext()) {
-                i++;
-                //能正常读取空单元格
-                Cell cell = row.getCell(i, Row.MissingCellPolicy.CREATE_NULL_AS_BLANK);
-                if (i == lastCellNum) {
+            int lastCellNum = row.getLastCellNum();
+            boolean isBlankRow = true;
+            for (Cell cell : row) {
+                if (cell.getCellType() != CellType.BLANK) {
+                    isBlankRow = false;
                     break;
                 }
-                String value;
-                if (cell == null || cell.getCellType().equals(CellType.BLANK)) {
-                    value = "";
-                } else {
-                    value = getCellValue(cell);
-                }
-                rowData.add(value);
             }
-            dataList.add(rowData);
+            if (!isBlankRow) {
+                // 处理非空白行
+                while (cellIterator.hasNext()) {
+                    i++;
+                    //能正常读取空单元格
+                    Cell cell = row.getCell(i, Row.MissingCellPolicy.CREATE_NULL_AS_BLANK);
+                    if (i == lastCellNum) {
+                        break;
+                    }
+                    String value;
+                    if (cell == null || cell.getCellType().equals(CellType.BLANK)) {
+                        value = "";
+                    } else {
+                        value = getCellValue(cell);
+                    }
+                    rowData.add(value);
+                }
+                dataList.add(rowData);
+            }
         }
 
         return dataList;
@@ -244,7 +256,9 @@ public class ExcelUtil {
                     DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("yyyy年MM月dd日 HH时mm分ss秒");
                     return timeFormatter.format(cell.getLocalDateTimeCellValue());
                 } else {
-                    return String.valueOf(cell.getNumericCellValue());
+                    BigDecimal value = BigDecimal.valueOf(cell.getNumericCellValue());
+                    BigDecimal noZeros = value.stripTrailingZeros();
+                    return noZeros.toPlainString();
                 }
             case FORMULA:
                 return cell.getCellFormula() + EMPTY;
@@ -252,4 +266,5 @@ public class ExcelUtil {
                 return EMPTY;
         }
     }
+
 }

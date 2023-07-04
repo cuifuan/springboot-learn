@@ -26,7 +26,7 @@ public class ExcelController {
     /**
      * 导出模板
      */
-    @GetMapping("export")
+    @RequestMapping("export")
     public void export(HttpServletResponse response) throws IOException {
         LinkedHashMap<String, String> titleMap = new LinkedHashMap<>(16);
         titleMap.put("id", "编号");

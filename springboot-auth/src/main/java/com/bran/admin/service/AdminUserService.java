@@ -1,12 +1,13 @@
 package com.bran.admin.service;
 
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.baomidou.mybatisplus.core.toolkit.Wrappers;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.bran.admin.exception.CheckException;
 import com.bran.admin.mapper.AdminUserMapper;
 import com.bran.admin.model.AdminUser;
 import com.bran.admin.utils.JwtTokenUtils;
-import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.baomidou.mybatisplus.core.toolkit.Wrappers;
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import org.slf4j.helpers.MessageFormatter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -76,6 +77,11 @@ public class AdminUserService extends ServiceImpl<AdminUserMapper, AdminUser> im
 
     private AdminUser getCurrentAdminUser() {
         return (AdminUser) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+    }
+
+    public static void main(String[] args) {
+        String str = MessageFormatter.format("Hi {}.", "sb").getMessage();
+        System.out.println(str);
     }
 }
 
