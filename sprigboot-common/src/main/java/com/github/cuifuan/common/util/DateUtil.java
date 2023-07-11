@@ -1,4 +1,4 @@
-package com.bran.admin.utils;
+package com.github.cuifuan.common.util;
 
 import java.time.DayOfWeek;
 import java.time.LocalDateTime;
@@ -8,7 +8,7 @@ import java.util.stream.IntStream;
 
 public class DateUtil {
 
-    private final static String DATE_TIME_FMT = "yyyy-MM-dd HH:mm:ss";
+    public final static String DATE_TIME_FMT = "yyyy-MM-dd HH:mm:ss";
 
 
     /**
@@ -120,14 +120,6 @@ public class DateUtil {
         } else {
             return localDateTime.format(dtf);
         }
-    }
-
-    /**
-     * 时间字符串 转 LocalDateTime
-     */
-    public static LocalDateTime dateTimeFormat(String dateTimeStr) {
-        DateTimeFormatter fmt = DateTimeFormatter.ofPattern(DateUtil.DATE_TIME_FMT);
-        return LocalDateTime.parse(dateTimeStr, fmt);
     }
 
     public static void main(String[] args) {

@@ -46,3 +46,4 @@ springboot-autocsdn/.mvn/
 out/
 springboot-redis/redis/data/dump.rdb
 springboot-redis/.mvn/
+sprigboot-common/.mvn/wrapper
