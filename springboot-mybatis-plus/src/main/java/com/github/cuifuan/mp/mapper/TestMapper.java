@@ -1,6 +1,6 @@
 package com.github.cuifuan.mp.mapper;
 
-import com.github.cuifuan.mp.model.MybatisTest;
+import com.github.cuifuan.mp.domain.MybatisTest;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Options;

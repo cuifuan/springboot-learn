@@ -1,4 +1,4 @@
-package com.github.cuifuan.mp.model;
+package com.github.cuifuan.mp.domain;
 
 import lombok.Data;
 

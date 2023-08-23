@@ -1,6 +1,6 @@
 package com.github.cuifuan.mp.service;
 
-import com.github.cuifuan.mp.model.MybatisTest;
+import com.github.cuifuan.mp.domain.MybatisTest;
 
 import java.util.List;
 

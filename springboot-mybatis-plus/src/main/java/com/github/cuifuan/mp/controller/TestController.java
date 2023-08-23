@@ -1,7 +1,7 @@
 package com.github.cuifuan.mp.controller;
 
 import com.github.cuifuan.mp.service.TestService;
-import com.github.cuifuan.mp.model.MybatisTest;
+import com.github.cuifuan.mp.domain.MybatisTest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -21,9 +21,4 @@ public class TestController {
         return testService.getMybatisTestById(id);
     }
 
-    @PostMapping("add")
-    public ResultBean createClient(@RequestBody MybatisTest mybatisTest) {
-        testService.createMybatisTest(mybatisTest);
-        return ResultBean.ok();
-    }
 }

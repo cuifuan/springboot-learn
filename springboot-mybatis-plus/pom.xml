@@ -37,14 +37,14 @@
 		<dependency>
 			<groupId>com.baomidou</groupId>
 			<artifactId>mybatis-plus-boot-starter</artifactId>
-			<version>3.5.2</version>
+			<version>3.5.0</version>
 		</dependency>
 
         <!-- Database -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.14</version>
+            <version>8.0.12</version>
         </dependency>
 
         <dependency>
@@ -55,6 +55,7 @@
     </dependencies>
 
     <build>
+        <finalName>springboot-mybatis-plus</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

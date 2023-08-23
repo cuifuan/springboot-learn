@@ -2,7 +2,7 @@ package com.github.cuifuan.mp.service.impl;
 
 import com.github.cuifuan.mp.mapper.TestMapper;
 import com.github.cuifuan.mp.service.TestService;
-import com.github.cuifuan.mp.model.MybatisTest;
+import com.github.cuifuan.mp.domain.MybatisTest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
